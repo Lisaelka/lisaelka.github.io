@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css login.css">
+            
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                    
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <form id="loginForm"> <!-- Added id="loginForm" -->
+                <div class="form-content">
+                    <header>Login</header>
+                </div>
+                <div class="field input-field">
+                    <input type="email" placeholder="Email" class="input" id="email"> 
+                </div>
+                <div class="field input-field">
+                    <input type="password" placeholder="Password" class="password" id="password">
+                </div>
+                <div class="box">
+                    <input type="checkbox" id="remember" name="remember" value="rememberme">
+                    <label for="remember">Remember me</label><br>
+                </div>
+                <div class="field button-field">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <div class="form-link">
+                <span>Don't have an account yet? <a href="halaman register.html" class="link signup-link"><u>Register here</u></a></span>
+            </div>
+        </div>
+    </section>
+    <div id="error-message" style="display: none;">Invalid email or password. Please try again.</div>
+    <script src="javascript login.js"></script>
+</body>
+</html>

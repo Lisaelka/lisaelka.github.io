@@ -1,0 +1,454 @@
+<html>
+<!-- Coding By Somanath Goudar - https://www.codewithrandom.com/2023/11/15/facebook-clone-using-html-css/ -->
+<link rel="stylesheet" href="css home.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+ <title> જ⁀➴ Our Village  </title>
+<!-- header starts -->
+    <div class="header">
+        <div class="header__left">
+            <img src="logo.png" />
+            <div class="header__input">
+                <span class="material-icons"> search </span>
+                <input type="text" placeholder="Search" />
+            </div>
+        </div>
+
+        <div class="header__middle">
+            <div class="header__option active" onclick="redirectToHome()">
+                <span class="material-icons"> home </span>
+            </div>
+            <div class="header__option" onclick="redirectToProfile()">
+                <span class="material-icons">supervised_user_circle </span></a>
+            </div>
+			<div class="header__option" ="redirectToAboutUs()">
+                <span class="material-icons">emoji_flags </span></a>
+            </div>
+        </div>
+
+        <div class="header__right">
+            <div class="header__info">
+                <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                <h4> Minsi </h4>
+            </div>
+        </div>
+    </div>
+    <!-- header ends -->
+	
+<!-- main body starts -->
+<div class="main__body">
+    <!-- sidebar starts -->
+    <div class="sidebar">
+        <div class="sidebarRow">
+		<!-- profile card starts -->
+			<div class="wrapper">
+			<div class="img-area">
+			  <div class="inner-area">
+				<img src="minsi.jpeg" alt="">
+			  </div>
+			</div>
+			<div class="name">Minsi</div>
+			<div class="about">South Korea</div>
+				<div class="row">
+					<ul id="vertical-list"> <span class="material-icons"> notifications </span>
+					<p> <b> 10 </b> Notifications</p></ul>
+					<ul id="vertical-list"><span class="material-icons"> people </span>
+					<p> <b> 2.2M </b> Followers</p></ul>
+				</div>
+			</div>
+		</div>
+		<!-- profile card ends -->
+		
+        <div class="sidebarRow">
+            <span class="material-icons"> chat </span>
+            <h4>Message</h4>
+        </div>
+		
+		<div class="sidebarRow">
+            <span class="material-icons"> subscriptions </span>
+			<h4>News</h4>
+            </div>
+			
+        <div class="sidebarRow">
+            <span class="material-icons"> video_library </span>
+            <h4>Library</h4>
+        </div>
+
+        <div class="sidebarRow">
+            <span class="material-icons"> storefront </span>
+            <h4>Shop</h4>
+        </div>
+		
+		<div class="sidebarRow">
+			<span class="material-icons"> expand_more </span>
+			<h4> More </h4>
+		</div>
+    </div>
+    <!-- sidebar ends -->
+	
+	
+	<align="left"> <div class="feed">
+            <div class="storyReel">
+                <!-- story starts -->
+                <div style="
+              background-image: url('shotaro.jpeg');
+            " class="story">
+                    <img class="user__avatar story__avatar"
+                        src="shotaro user.jpeg"
+                        alt="" />
+                    <h4>Osaki Shotaro</h4>
+                </div>
+                <!-- story ends -->
+				
+				<!-- story starts -->
+                <div style="
+              background-image: url('eunseok.jpeg');
+            " class="story">
+                    <<img class="user__avatar story__avatar"
+                        src="eunseok user.jpeg"
+                        alt="" />
+                    <h4>Song Eunseok</h4>
+                </div>
+                <!-- story ends -->
+
+                <!-- story starts -->
+                <div style="
+              background-image: url('sungchan.jpeg');
+            " class="story">
+                    <img class="user__avatar story__avatar"
+                        src="sungchan user.jpeg"
+                        alt="" />
+                    <h4>Jung Sungchan</h4>
+                </div>
+                <!-- story ends -->
+
+                <!-- story starts -->
+                <div style="
+              background-image: url('wonbin.jpeg');
+            " class="story">
+                    <img class="user__avatar story__avatar"
+                        src="wonbin user.jpeg"
+                        alt="" />
+                    <h4>Park Wonbin</h4>
+                </div>
+                <!-- story ends -->
+
+                <!-- story starts -->
+                <div style="
+              background-image: url('seunghan.jpeg');
+            " class="story">
+                    <img class="user__avatar story__avatar"
+                        src="seunghan user.jpeg"
+                        alt="" />
+                    <h4>Hong Seunghan</h4>
+                </div>
+                <!-- story ends -->
+
+                <!-- story starts -->
+                <div style="
+              background-image: url('Sohee.jpeg');
+            " class="story">
+                    <img class="user__avatar story__avatar"
+                        src="sohee user.jpeg"
+                        alt="" />
+                    <h4>Lee Sohee</h4>
+                </div>
+                <!-- story ends -->
+				
+				<!-- story starts -->
+                <div style="
+              background-image: url('anton.jpeg');
+            " class="story">
+                    <<img class="user__avatar story__avatar"
+                        src="anton user.jpeg"
+                        alt="" />
+                    <h4>Anton Lee</h4>
+                </div>
+                <!-- story ends -->
+            </div>
+
+  <!-- message sender starts -->
+			<div class="messageSender">
+				<div class="messageSender__top">
+					<img class="user__avatar" src="minsi.jpeg" alt="" />
+					<form id="postForm">
+						<input class="messageSender__input" id="postInput" placeholder="What's on your mind?" type="text" />
+					</form>
+				</div>
+
+				<div class="messageSender__bottom">
+					<div class="messageSender__option">
+						<span style="color: red" class="material-icons">videocam</span>
+						<h3>Live</h3>
+					</div>
+
+					<div class="messageSender__option">
+						<span style="color: green" class="material-icons">photo_library</span>
+						<h3>Photo</h3>
+					</div>
+					<button onclick="postMessage(event)">Create Post</button> <!-- pass event object -->
+				</div>
+			</div>
+			<script src="javascript home.js"> </script>
+	<!-- message sender ends -->
+  
+<!-- post starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                    <div class="post__topInfo">
+                        <h3>Minsi</h3>
+                        <p>15 March  at 22:30</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                     <p>Such a beautiful night ⋆.˚ ᡣ𐭩  </p>
+                </div>
+
+                <div class="post__image">
+                    <img src="concert.jpeg"
+                        alt="" />
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons"> thumb_up </span>
+                        <p>Like</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> chat_bubble_outline </span>
+                        <p>Comment</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> near_me </span>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <!-- post ends -->
+			
+
+			<!-- post starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                    <div class="post__topInfo">
+                        <h3>Minsi</h3>
+                        <p>15 March  at 12:30</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p>1 hour before the concert start, so excited ...</p>
+                </div>
+
+                <div class="post__image">
+                    <img src="minsi 2.jpeg"
+                        alt="" />
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons"> thumb_up </span>
+                        <p>Like</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> chat_bubble_outline </span>
+                        <p>Comment</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> near_me </span>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <!-- post ends -->
+
+			<!-- post starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                    <div class="post__topInfo">
+                        <h3>Minsi</h3>
+                        <p>15 March at 09:30</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p> Outfit check for RIIZE 1st concert ✩°｡⋆⸜ 🎧✮</p>
+                </div>
+
+                <div class="post__image">
+                    <img src="minsi 3.jpeg"
+                        alt="" />
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons"> thumb_up </span>
+                        <p>Like</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> chat_bubble_outline </span>
+                        <p>Comment</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> near_me </span>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <!-- post ends -->
+			
+			<!-- post starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                    <div class="post__topInfo">
+                        <h3>Minsi</h3>
+                        <p>10 March at 11:30</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p> Finally, I had a lunch with my online friends<p>
+                </div>
+
+                <div class="post__image">
+                    <img src="minsi 4.jpeg"
+                        alt="" />
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons"> thumb_up </span>
+                        <p>Like</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> chat_bubble_outline </span>
+                        <p>Comment</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> near_me </span>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <!-- post ends -->
+			
+			<!-- post starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                    <div class="post__topInfo">
+                        <h3>Minsi</h3>
+                        <p>8 March at 11:30</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p> Currently listening to "Get A Guitar - RIIZE" 🎸⋆⭒˚｡⋆ <p>
+                </div>
+
+                <div class="post__image">
+                    <img src="minsi 1.jpeg"
+                        alt="" />
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons"> thumb_up </span>
+                        <p>Like</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> chat_bubble_outline </span>
+                        <p>Comment</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> near_me </span>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <!-- post ends -->
+			
+			<!-- post starts -->
+            <div class="post">
+                <div class="post__top">
+                    <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                    <div class="post__topInfo">
+                        <h3>Minsi</h3>
+                        <p>7 March at 15:30</p>
+                    </div>
+                </div>
+
+                <div class="post__bottom">
+                    <p> My long-awaited packages has finally arrived...<p>
+                </div>
+
+                <div class="post__image">
+                    <img src="album.jpeg"
+                        alt="" />
+                </div>
+
+                <div class="post__options">
+                    <div class="post__option">
+                        <span class="material-icons"> thumb_up </span>
+                        <p>Like</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> chat_bubble_outline </span>
+                        <p>Comment</p>
+                    </div>
+
+                    <div class="post__option">
+                        <span class="material-icons"> near_me </span>
+                        <p>Share</p>
+                    </div>
+                </div>
+            </div>
+            <!-- post ends -->
+			
+        </div>
+		</align>
+        <!-- feed ends -->
+		
+		<!-- main body ends -->
+
+    <div id="fb-root"></div>
+    <script>
+        function redirectToProfile() {
+            // Redirect to the profile page
+            window.location.href = "halaman profile.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+		function redirectToHome() {
+            // Redirect to the home page
+            window.location.href = "halaman home.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+    </script>
+	</html>

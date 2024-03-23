@@ -1,0 +1,363 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header__left img {
+  height: 80px;
+}
+
+.user__avatar {
+  border-radius: 100%;
+  width: 48px;
+  height: 48px;
+  margin: 5px;
+}
+
+.header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: #e8c8b8;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  background-color: #eff2f5;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+
+.header__input input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+
+.header__middle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.header__option .material-icons {
+  font-size: xx-large;
+  color: gray;
+}
+
+.header__option:hover .material-icons {
+  color: #c06b3e;
+}
+
+.header__option {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.header__option.active .material-icons {
+  color: #c06b3e;
+}
+
+.header__option.active {
+  border-bottom: 4px solid #c06b3e;
+}
+
+.header__option:hover {
+  background-color: #f0dbd0;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: none;
+  box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info h4 {
+  margin-left: 10px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+}
+
+.header__right .material-icons {
+  color: gray;
+  margin: 0 10px;
+}
+
+.header__right .material-icons:hover {
+  cursor: pointer;
+}
+body {
+  background-color: #f0dbd0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Unequal columns: left, middle (double width), right */
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .left-column, .middle-column, .right-column {
+    background-color: #f0dbd0;
+    padding: 30px;
+    text-align: center;
+	font-weight: 300;
+	font-size: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* On smaller screens, display only one column */
+    }
+  }
+/* Profile Picture Section Styles */
+.profile-header {
+    position: relative;
+    height: 250px; /* Adjust height as needed */
+    background-color: #1DA1F2; /* Background color for the header */
+    color: white;
+}
+
+.profile-header__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('header 2.jpg'); /* Background image for the header */
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust opacity of the background image */
+}
+
+.profile-header__content {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-description {
+    font-size: 16px;
+}
+/*SECTION*/
+
+/* Content Sections */
+.content-sections {
+    display: flex;
+    justify-content: space-between; /* Spread sections horizontally */
+    align-items: flex-start; /* Align sections to the top */
+}
+
+.left-content,
+.middle-content {
+    width: 30%; /* Adjust width as needed */
+    margin-top: 20px; /* Adjust spacing between sections */
+}
+
+.right-content {
+    width: 30%; /* Adjust width as needed */
+    margin-top: 20px; /* Adjust spacing between sections */
+}
+
+/* Adjust styles for each content section as needed */
+
+
+.profile-stats-container,
+.recent-liked-posts-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-stat {
+    margin-bottom: 10px;
+}
+
+.profile-stat h3 {
+    margin: 0;
+}
+
+.liked-posts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Align items vertically center */
+  justify-content: center; /* Align items horizontally center */
+}
+
+.post {
+  width: 40%;
+  margin: 5px;
+  position: relative;
+}
+
+.post img {
+  width: 300px;
+  height: auto;
+}
+
+.like-icon {
+  position: absolute;
+  left: 6px;
+  bottom: 2px;
+  color: red;
+}
+.recent-post {
+    display: flex;
+    margin-bottom: 20px;
+	margin-top: 10px;
+}
+
+.recent-post img {
+	margin-top: 15px;
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.post-details {
+    flex-grow: 1;
+}
+
+.caption {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.likes,
+.comments {
+    color: #666;
+}
+
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post img {
+    width: 100%;
+    /* Adjust other styles as needed */
+}
+
+.caption {
+    font-style: italic; /* Make the caption italic */
+    color: #666; /* Set the color of the caption text */
+    margin-top: 5px; /* Add some spacing between the image and the caption */
+}
+.post-content {
+    display: flex;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.caption {
+    margin-bottom: 10px; /* Spacing between caption and details */
+}
+
+.like-count,
+.comment-count {
+    margin: 0;
+}
+
+
+./* Style for the message container */
+    .message-container {
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Style for each message */
+    .message {
+        display: flex;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Style for the message avatar */
+    .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    /* Style for the message content */
+    .message-content {
+        flex: 1;
+		text-align: left;
+    }
+
+    /* Style for the message name */
+    .name {
+        font-weight: bold;
+        margin-bottom: 4px;
+		text-align: left:
+    }
+
+    /* Style for the latest chat */
+    .latest-chat {
+        color: #777;
+    }
+
+.contact {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Adjust as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px; /* Adjust spacing between contacts */
+}
+
+.contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+

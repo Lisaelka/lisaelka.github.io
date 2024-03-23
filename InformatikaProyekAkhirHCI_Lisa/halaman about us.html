@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Coding By Workik - https://workik.com/top-about-us-section-website-designs-with-html-css-and-javascript-code -->
+		<html lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> What is RI-VILLE? </title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css about us.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'/>
+		<!-- header starts -->
+    <div class="header">
+        <div class="header__left">
+            <img src="logo.png" />
+            <div class="header__input">
+                <span class="material-icons"> search </span>
+                <input type="text" placeholder="Search" />
+            </div>
+        </div>
+
+        <div class="header__middle">
+            <div class="header__option" onclick="redirectToHome()">
+                <span class="material-icons"> home </span>
+            </div>
+            <div class="header__option" onclick="redirectToProfile()">
+                <span class="material-icons">supervised_user_circle </span></a>
+            </div>
+			<div class="header__option active" onclick="redirectToAboutUs()">
+                <span class="material-icons">emoji_flags </span></a>
+            </div>
+        </div>
+
+        <div class="header__right">
+            <div class="header__info">
+                <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                <h4> Minsi </h4>
+            </div>
+        </div>
+    </div>
+    <!-- header ends -->
+<body>                        
+<div class="responsive-container-block bigContainer">
+  <div class="responsive-container-block Container">
+    <img class="mainImg" src="foto halaman 9.jpg">
+    <div class="allText aboveText">
+      <p class="text-blk headingText">
+        RI-VILLE.
+      </p>
+      <p class="text-blk description">
+        RI-VILLE or Riize-Village, is a place where you can find new friends to talk and hype up about "RIIZE", we call our friends as Briize. Inside this village, you can communicate and reveal your new side to the others. Now, come and join our village before it's too late. Let's create many memories here !
+		<BR></BR>
+    </div>
+  </div>
+</div>
+<script>
+        function redirectToProfile() {
+            // Redirect to the profile page
+            window.location.href = "halaman profile.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+		function redirectToHome() {
+            // Redirect to the home page
+            window.location.href = "halaman home.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+		function redirectToAboutUs() {
+            // Redirect to the home page
+            window.location.href = "halaman about us.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+    </script>
+</body>
+</html>

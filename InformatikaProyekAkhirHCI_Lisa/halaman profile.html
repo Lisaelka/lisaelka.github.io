@@ -1,0 +1,210 @@
+<html>
+<!-- Coding By Somanath Goudar - https://www.codewithrandom.com/2023/11/15/facebook-clone-using-html-css/ -->
+<link rel="stylesheet" href="css profile.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<title> 「 ✦ Profile ✦ 」 </title>
+<!-- header starts -->
+    <div class="header">
+        <div class="header__left">
+            <img src="logo.png" />
+            <div class="header__input">
+                <span class="material-icons"> search </span>
+                <input type="text" placeholder="Search" />
+            </div>
+        </div>
+
+        <div class="header__middle">
+            <div class="header__option" onclick="redirectToHome()">
+                <span class="material-icons"> home </span>
+            </div>
+            <div class="header__option active" onclick="redirectToProfile()">
+                <span class="material-icons">supervised_user_circle </span></a>
+            </div>
+			<div class="header__option" onclick="redirectToAboutUs()">
+                <span class="material-icons">emoji_flags </span></a>
+            </div>
+        </div>
+
+        <div class="header__right">
+            <div class="header__info">
+                <img class="user__avatar"
+                    src="minsi.jpeg"
+                    alt="" />
+                <h4> Minsi </h4>
+            </div>
+        </div>
+    </div>
+    <!-- header ends -->
+	
+	<!-- Profile Picture Section -->
+    <div class="profile-header">
+        <div class="profile-header__bg"></div> <!-- Background for the header -->
+        <div class="profile-header__content">
+            <img src="minsi.jpeg" class="profile-picture" alt="Profile Picture">
+            <h1 class="profile-name">Minsi</h1>
+            <p class="profile-description">15.02.95</p>
+        </div>
+    </div>
+	<!-- Profile Picture ends -->
+	
+	<div class="grid-container">
+		  <div class="left-column">
+			<div class="profile-stats-container">
+				<h2>Profile Stats</h2>
+				<p>@gominsi</p>
+				<div class="profile-stat">
+					<h3>0</h3>
+					<p>Following</p>
+				</div>
+				<div class="profile-stat">
+					<h3>2.2M</h3>
+					<p>Followers</p>
+				</div>
+				<div class="profile-stat">
+					<h3>568</h3>
+					<p>Posts</p>
+				</div>
+			</div>
+
+					<!-- Recent Liked Posts Container -->
+				<div class="profile-stats-container">
+				<h2>Liked Posts</h2>
+					<div class="liked-posts">
+						<div class="post">
+						  <img src="liked 1.jpeg" alt="Post 1">
+						  <span class="like-icon">&#10084;</span>
+						</div>
+						<div class="post">
+						  <img src="liked 2.jpeg" alt="Post 2">
+						  <span class="like-icon">&#10084;</span>
+						</div>
+						<div class="post">
+						  <img src="liked 3.jpeg" alt="Post 3">
+						  <span class="like-icon">&#10084;</span>
+						</div>
+						<div class="post">
+						  <img src="liked 4.jpeg" alt="Post 4">
+						  <span class="like-icon">&#10084;</span>
+						</div>
+						<div class="post">
+						  <img src="liked 5.jpeg" alt="Post 5">
+						  <span class="like-icon">&#10084;</span>
+						</div>
+						<div class="post">
+						  <img src="liked 6.jpeg" alt="Post 6">
+						  <span class="like-icon">&#10084;</span>
+						</div>
+					</div>
+				</div>
+				</div>		
+        
+		<!-- Middle Content -->
+<div class="container">
+	<br></br>
+    <center><h2>Recent Posts</h2></center>
+    <div class="recent-post">
+        <img src="post 1.jpeg" alt="Post 1">
+        <div class="post-details">
+            <p class="caption"> Sunday morning~~ </p>
+            <div class="post-meta">
+                <span class="likes"><b>83,254</b> Likes</span>
+                <span class="comments"><b>250</b> Comments</span>
+            </div>
+        </div>
+    </div>
+    <div class="recent-post">
+        <img src="post 3.jpeg" alt="Post 2">
+        <div class="post-details">
+            <p class="caption"> Should I try to play a guitar?</p>
+            <div class="post-meta">
+                <span class="likes"> <b>90,567</b> Likes</span>
+                <span class="comments"><b>300 </b>Comments</span>
+            </div>
+        </div>
+    </div>
+    <div class="recent-post">
+        <img src="post 2.jpeg" alt="Post 3">
+        <div class="post-details">
+            <p class="caption"> Visiting Riize's pop-up store in Hongdae !</p>
+            <div class="post-meta">
+                <span class="likes"><b>80,380</b> Likes</span>
+                <span class="comments"><b>200</b> Comments</span>
+            </div>
+        </div>
+    </div>
+	<div class="recent-post">
+        <img src="post 4.jpeg" alt="Post 3">
+        <div class="post-details">
+            <p class="caption"> Got my favourite photocard...</p>
+            <div class="post-meta">
+                <span class="likes"><b>100,673</b> Likes</span>
+                <span class="comments"><b>400</b> Comments</span>
+            </div>
+        </div>
+    </div>
+	<div class="recent-post">
+        <img src="post 5.jpeg" alt="Post 3">
+        <div class="post-details">
+            <p class="caption"> Waiting for their next album</p>
+            <div class="post-meta">
+                <span class="likes"><b>85,655</b> Likes</span>
+                <span class="comments"><b>280</b> Comments</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<!-- Right Content -->
+		<div class="right-column">
+			<h2>Latest Contacts</h2>
+				<div class="message-container">
+					<!-- Message 1 -->
+					<div class="message">
+						<img src="dohyun.jpg" alt="Avatar" class="avatar">
+						<div class="message-content">
+							<div class="name"> Dohyun </div>
+							<div class="latest-chat"> Have you watched Exhuma?</div>
+						</div>
+					</div>
+					<!-- Message 2 -->
+					<div class="message">
+						<img src="songkang.jpg" alt="Avatar" class="avatar">
+						<div class="message-content">
+							<div class="name">Songkang</div>
+							<div class="latest-chat">I can't wait to see Sweet Home 3!</div>
+						</div>
+					</div>
+					<!-- Message 3 -->
+					<div class="message">
+						<img src="Saerok.jpg" alt="Avatar" class="avatar">
+						<div class="message-content">
+							<div class="name">Saerok</div>
+							<div class="latest-chat">Let's have a lunch tomorrow, miss u so much..</div>
+						</div>
+					</div>
+					<!-- Message 4 -->
+					<div class="message">
+						<img src="jisoo.jpg" alt="Avatar" class="avatar">
+						<div class="message-content">
+							<div class="name">Jisoo</div>
+							<div class="latest-chat">Will you attend the Christian Dior PFW next week?</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+        function redirectToProfile() {
+            // Redirect to the profile page
+            window.location.href = "halaman profile.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+		function redirectToHome() {
+            // Redirect to the home page
+            window.location.href = "halaman home.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+		function redirectToAboutUs() {
+            // Redirect to the home page
+            window.location.href = "halaman about us.html"; // Replace "profile.html" with the actual URL of your profile page
+        }
+    </script>
+</html>
